@@ -7,8 +7,9 @@ jobs:
     steps:
       - checkout
       
-      - run: build dependencies
-        commmand: bundle install
+      - run:
+          name: build dependencies
+          commmand: bundle install
       
       - run:
           name: build the jekyll site
